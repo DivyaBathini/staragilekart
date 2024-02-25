@@ -26,7 +26,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'scp /root/.jenkins/workspace/gamutkart/target/gamutkart.war divya@172.31.44.96:/home/divya/apache-tomcat-9.0.85/webapps/'
+		sh 'scp /root/.jenkins/workspace/gamut/target/gamutkart.war divya@172.31.44.96:/home/divya/apache-tomcat-9.0.85/webapps/'
 	}
     }
 }

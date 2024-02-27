@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone-Repo') {
 	    	steps {
-	                git url 'https://www.github.com/DivyaBathini/staragilekart.git'
+	                git url: 'https://www.github.com/DivyaBathini/staragilekart.git,branch:'main'
 	    	}
         }
 	 stage ('Build'){

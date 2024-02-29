@@ -26,7 +26,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'sshpass -p "divya123" scp /target/gamutkart.war divya@:172.31.37.51/home/divya/aipache-tomcat-9.0.86/webapps/'
+		sh 'sshpass -p "divya123" scp /target/gamutkart.war divya@:172.31.37.51/home/divya/apache-tomcat-9.0.86/webapps/'
                 
 	}
     }
